@@ -1,4 +1,6 @@
-<?php namespace CoryKeane\Slack;
+<?php
+
+namespace CoryKeane\Slack;
 
 use Guzzle\Http\Client as GuzzleClient;
 

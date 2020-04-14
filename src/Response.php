@@ -28,7 +28,10 @@ class Response
     public function isOkay()
     {
         $isOkay = $this->response->ok;
-        if (!$isOkay) $this->error = $this->errorTypes[$this->response->error];
+        if (!$isOkay) {
+            debug($this->response);
+            $this->error = $this->errorTypes[$this->response->error];
+        }
         return $isOkay;
     }
 
